@@ -1,0 +1,452 @@
+:root {
+    --primary-color : #000;
+    --secondary-color : #56524e;
+    --bg-primary : #FFFFFF;
+    --bg-secondary : #F5F5F4;
+    --greay : #929292;
+    --dark-greay : #56524E;
+    --black : #000;
+    --white : #fff;
+    --border-color : #92929230;
+    --text-color : #78726D;
+}
+
+/* -------------------------- */
+/*    TEXT DECLARATION START  */
+/* -------------------------- */
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0.7px;
+}
+
+p {
+    letter-spacing: 0.6px;
+}
+
+.primary-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.secondary-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #000;
+}
+
+.tertiary-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+.primary-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.secondary-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+
+.text {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.fs-12-black {
+    font-size: 12px;
+    color: var(--black);
+    letter-spacing: 0.6px;
+    font-weight: normal;
+}
+
+.fs-12-grey {
+    font-size: 12px;
+    color: var(--text-color);
+    letter-spacing: 0.6px;
+    font-weight: normal;
+}
+
+.footer .primary-title,
+.footer .secondary-title,
+.footer .tertiary-title,
+.footer .primary-subtitle,
+.footer .secondary-subtitle,
+.footer .subtitle,
+.footer .text,
+.footer .normal-links
+{
+    color: var(--white);
+}
+
+/* -------------------------- */
+/*    BUTTON Declaration START    */
+/* -------------------------- */
+button {
+    outline: none;
+}
+
+.primary-btn {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.secondary-btn {
+    border: 1px solid #929292;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background: none;
+}
+
+.tertiary-btn {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* -------------------------- */
+/*   BUTTON Declaration END   */
+/* -------------------------- */
+
+.links {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.normal-links {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--black);
+}
+
+ul {
+    padding: 0 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+
+.content-spacing {
+    margin: 15px 0 !important;
+}
+
+/* .border-bottom {
+    border-bottom: 1px solid var(--greay);
+}
+.border-top {
+    border-bottom: 1px solid var(--greay);
+} */
+
+/* -------------------------- */
+/*            INPUT           */
+/* -------------------------- */
+.inputs {
+    border: 1px solid var(--greay);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    color: #56524e;
+}
+.inputs:focus {
+    border: 1px solid var(--greay);
+}
+
+
+/* -------------------------- */
+/*           NAVBAR           */
+/* -------------------------- */
+
+.main-navbar {
+    border-bottom: 1px solid var(--border-color);
+    /* position: fixed;
+    width: 100%;
+    z-index: 999; */
+    box-shadow: 1px 1px 5px #92929230;
+}
+
+.navbar {
+    background-color: var(--bg-primary);
+}
+
+.brand-img {
+    height: 60px;
+    width: 60px;
+}
+.brand-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.brand-title {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--black);
+}
+
+/* -------------------------- */
+/*           SECTION 1        */
+/* -------------------------- */
+
+.home {
+    background-color: var(--bg-secondary);
+    margin-top: 70px;
+}
+
+.home .shop .shop-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home .shop .shop-text .shop-img {
+    height: 80px;
+    width: 80px;
+
+}
+.home .shop .shop-text .shop-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.home .shop .shop-text .shop-title {
+    padding-left: 15px;
+}
+
+.home .shop .rating,
+.home .shop .review {
+    border-right: 1px solid var(--border-color);
+    padding-right: 15px;
+}
+
+.home .shop .review,
+.home .shop .developer {
+    padding-left: 15px;
+}
+
+.home .shop .shop-review .title {
+    font-size: 15px;
+    color: var(--dark-greay);
+    line-height: 1;
+}
+
+.home .shop .btn-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+/* RIGHT PART  */
+.home .shop .video {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home .shop .img-bg {
+    /* background-color: var(--black); */
+    height: 120px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0;
+}
+
+/* .home .shop .img-bg .last {
+    position: relative;
+} */
+
+.home .shop .img-bg .small-button {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--text-color);
+    padding: 5px 10px;
+    position: absolute;
+    top: 40%;
+    left: calc(100% - 70%);
+}
+
+.mob-img-bg {
+    /* background-color: var(--black); */
+    height: 300px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 1px 1px 5px #929292;
+}
+
+.home .shop .img-bg img,
+.mob-img-bg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* -------------------------- */
+/*           SECTION 2        */
+/* -------------------------- */
+
+/* LEFT PART  */
+.section-2 {
+    background-color: var(--bg-primary);
+}
+
+/* .section-2 .highlight-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: var(--black);
+    margin-bottom: 15px;
+} */
+
+.section-2 .store_title {
+    font-size: 14px;
+    color: var(--black);
+}
+
+.section-2 .store_text {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* RIGHT PART  */
+.section-2 ul li {
+    margin-bottom: 15px;
+}
+
+.section-2 ul li .check-marks img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
+
+.section-2 ul li .list-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 0.6px;
+}
+
+/* -------------------------- */
+/*           SECTION 3        */
+/* -------------------------- */
+
+.card {
+    box-shadow: 1px 1px 5px #92929280;
+}
+
+/* -------------------------- */
+/*           Footer        */
+/* -------------------------- */
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+/* EXTRA uses */
+.truncated-description {
+    text-overflow: ellipsis;
+    height: 30px;
+}
+
+.testimonial {
+    width: 50%;
+}
+
+/* carousal button style  */
+
+.carosuel-custom-btn {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 45px;
+    background-color: var(--white);
+    box-shadow: 2px 2px 8px #00000080;
+    color: var(--black);
+    position: relative;
+}
+
+.carosuel-custom-btn i {
+    position: absolute;
+    top: 30%;
+    left: calc(100% - 65%);
+}
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon .next i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@media only screen and (max-width: 992px) {
+    .testimonial {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        width: 100%;
+    }
+
+    .carosuel-custom-btn {
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+    .carosuel-custom-btn i {
+        position: absolute;
+        top: 4px;
+        left: 6px;
+    }
+}

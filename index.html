@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the power of 'Notify Me! Restock Alert' – the ultimate solution to receive instant notifications when your favorite products are back in stock. Subscribe now for exclusive offers and never miss out on limited editions.">
+    
+    <!-- title  -->
+    <title>Notify Me! Restock Alert</title>
+    
+    <!-- style  -->
+    <link href="style/style.css" rel="stylesheet">
+    
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- BOOTSTRAP ICONS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+        <!-- navbar  -->
+        <header>
+            <nav class="navbar fixed-top border-bottom main-navbar" >
+                <!-- Navbar content -->
+                <div class="container-fluid container-lg">
+                <div class="d-flex flex-row align-items-center">
+                    <div class="brand-img">
+                        <img src="./assets/images/logo.jpg" alt="logo">
+                    </div>
+                    <h1 class="brand-title">Notify Me! Restock Alert</h1>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main page  -->
+        <section class="home">
+            <div class="container-fluid container-lg section-padding">
+                <div class="row shop">
+                    <!-- LEFT PART  -->
+                    <div class="col-12 col-xl-4">
+                        <div class="row d-flex flex-md-row flex-xl-column">
+                            <div class="col-12 col-md-6 col-xl-12">
+                                <div class="">
+                                    <div class="shop-text">
+                                        <div class="shop-img">
+                                            <img src="./assets/images/logo.jpg" alt="">
+                                        </div>
+                                        <div class="shop-title">
+                                            <h2 class="secondary-title">Notify Me! Restock Alert</h2>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="content-spacing">
+                                    <h2 class="tertiary-title">Free plan available</h2>
+                                </div>
+                                <div class="content-spacing">
+                                    <div class="shop-review d-flex flex-row">
+                                        <div class="rating">
+                                            <div>
+                                                <span class="title">Rating (3.0)</span>
+                                            </div>
+                                            <div class="rating-stars">
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="review">
+                                            <div>
+                                                <span class="title">Reviews</span>
+                                            </div>
+                                            <div>
+                                                <a href="#review" class="links">2</a>
+                                            </div>
+                                        </div>
+                                        <div class="developer">
+                                            <div>
+                                                <span class="title">Developers</span>
+                                            </div>
+                                            <div>
+                                                <a href="#footer" class="links">ShopeeTech</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-12">
+                                <div class="content-spacing d-flex flex-row ">
+                                    <div class="btn-groups w-100">
+                                        <form class="d-flex flex-column justify-content-center w-100 align-items-center" action="https://bis.shopeetech.com/" method="get">
+                                            <input 
+                                                type="text"
+                                                class="inputs"
+                                                name="shop"
+                                                placeholder="example.myshopify.com"
+                                            >
+                                            <button class="primary-btn w-100 mt-2" type="submit">
+                                                Install
+                                            </button>
+                                            <a class="tertiary-btn mt-1" href="https://dev-back-in-stock.myshopify.com/password" target="_blank" rel="noopener noreferrer">
+                                                View Demo Store
+                                            </a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT PART  -->
+                    <div class="col-12 col-xl-8 d-none d-md-block">
+                      <div class="row d-flex flex-row ">
+                          <div class="col-md-9">
+                            <iframe class="video" 
+                                src="https://www.youtube.com/embed/watch?v=y6sl-XxoGto">
+                            </iframe>
+                          </div>
+                          <div class="col-md-3">
+                                <div class="row gy-3 d-flex flex flex-column ">
+                                    <div type="button" class="col-4 img-bg w-100" onclick="setActive(0)"  data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                                        <img src="./assets/images/banner-1.jpg" alt="">
+                                    </div>
+                                    <div class="col-4 img-bg w-100 " onclick="setActive(1)"  data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                                        <img src="./assets/images/banner-4.jpg" alt="">
+                                    </div>
+                                    <div class="col-4 img-bg w-100 position-relative" onclick="setActive(2)" data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                                            <img src="./assets/images/1600_900.jpg" class="opacity-50" alt="">
+                                            <span class="last ">
+                                                <button class="small-button">+ 1 more</button>
+                                            </span>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- mobile view image scroller -->
+            <div class="container-fluid d-block d-md-none">
+                <div class="row d-flex flex-row flex-nowrap overflow-scroll">
+                    <span class="col-10 px-0 mx-3 mob-img-bg" >
+                        <iframe 
+                            class="video" 
+                            src="https://www.youtube.com/embed/watch?time_continue=2&v=y6sl-XxoGto&embeds_referring_euri=https%3A%2F%2Fapps.shopify.com%2F&embeds_referring_origin=https%3A%2F%2Fapps.shopify.com&feature=emb_title"
+                        >
+                        </iframe>
+                    </span>
+                    <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(0)" data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                        <img src="./assets/images/banner-1.jpg" alt="banner image-1">
+                    </span>
+                    <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(1)" data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                        <img src="./assets/images/banner-4.jpg" alt="banner image-2">
+                    </span>
+                    <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(2)" data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                        <img src="./assets/images/1600_900.jpg" alt="banner image-3">
+                    </span>
+                    <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(3)" data-bs-toggle="modal" data-bs-target="#imageCarousel">
+                        <img src="./assets/images/banner-2.jpg" alt="banner image-4">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section 2  -->
+        <section class="container-fluid container-lg section-2 section-padding">
+            <div class="row">
+                <!-- LEFT PART  -->
+                <div class="col-12 col-md-4">
+                    <section class="row mb-4 mb-md-3">
+                        <div class="col-12">
+                            <h2 class="subtitle">Highlights</h2>
+                            <div class="highlight d-flex flex-row">
+                                <span>
+                                    <i class="bi bi-shop"></i>
+                                </span>
+                                <div class="ps-4">
+                                    <p class="store_title mb-0">Built for your business</p>
+                                    <span class="store_text">
+                                        Works with the latest themes <br>
+                                        Use directly in Shopify admin
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="row mt-5 d-none d-md-block">
+                        <div class="col-12">
+                            <h2 class="subtitle">About this app</h2>
+                            <div class="mt-3" >
+                                <div class="text mb-1">Launched</div>
+                                <div class="text">June 9, 2023</div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="text mb-1">Languages</div>
+                                <div class="text">English, Spanish, French, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, German, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Swedish, Thai, Turkish, and Vietnamese</div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="text mb-1">Categories</div>
+                                <div>
+                                    <span>
+                                        <a href="https://apps.shopify.com/categories/store-design-store-alerts-back-in-stock-alert" class="normal-links">Back in stock alert</a>
+                                    </span>,
+                                    <span>
+                                        <a href="https://apps.shopify.com/categories/selling-products-purchase-options-pre-orders" class="normal-links">Pre-orders</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="text mb-1">Works with</div>
+                                <div class="text">AWS</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- RIGHT PART  -->
+                <section class="col-12 col-md-8">
+                    <h2 class="primary-title mb-4">Create waiting lists and recover lost sales via automatic restock notifications.</h2>
+                    <p class="primary-subtitle d-none d-lg-block mb-4">DEMO STORE PASSWORD: 123 - Install the app and get it rolling in minutes and join merchants making revenue from out-of-stock products. Add the "Notify me" widget on product page to create demand. Send automatic notifications via email with out-of-box setup with friendly no-code UI. Customise everything and get suggestions with help from our 24/7 success team reports about lost sales and revenue recovered with reminders to convert. More features and details inside the app.</p>
+                    <p class="primary-subtitle d-block d-lg-none  mb-4"> 
+                        DEMO STORE PASSWORD: 123 - Install the app and get it rolling in minutes and join merchants making  ...
+                        <span>
+                            <a href="" class="links">more</a>
+                        </span>
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="check-marks">
+                                    <img src="./assets/icons/check-mark.png" alt="check-mark icon">
+                                </span>
+                                <span class="ps-3 list-text">Allow customers to receive automatic notifications when a product is restocked</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="check-marks">
+                                    <img src="./assets/icons/check-mark.png" alt="check-mark icon">
+                                </span>
+                                <span class="ps-3 list-text">Merchants can customize the message, design, and frequency of the alerts sent</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="check-marks">
+                                    <img src="./assets/icons/check-mark.png" alt="check-mark icon">
+                                </span>
+                                <span class="ps-3 list-text">Enable customers to pre-order products that are out of stock</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="check-marks">
+                                    <img src="./assets/icons/check-mark.png" alt="check-mark icon">
+                                </span>
+                                <span class="ps-3 list-text">Provide reports of performance and product impressions</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex align-items-center">
+                                <span class="check-marks">
+                                    <img src="./assets/icons/check-mark.png" alt="check-mark icon">
+                                </span>
+                                <span class="ps-3 list-text">Notify me widget works on Product and Collection page.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <!-- section 3  -->
+        <section class="container-fluid container-lg section-3 section-padding border-top">
+            <div class="row ">
+                <div class="col-12 mb-4">
+                    <h2 class="secondary-title">Pricing</h2>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="row gx-4 d-flex flex-row flex-nowrap overflow-x-auto">
+                        <div class="col-8 col-md-4">
+                            <div class="card p-3">
+                                <div class="card-title border-bottom pb-2">
+                                    <div class="secondary-subtitle">FREE</div>
+                                    <div class="tertiary-title">Free</div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="mb-2 text">20 notifications</div>
+                                    <div class="mb-2 text">1000 impressions of products</div>
+                                    <div class="mb-2 text">Unlimited BIS requests</div>
+                                    <div class="mb-2 text">Automatic restock reminder</div>
+                                    <div class="mb-2 text"><br></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4">
+                            <div class="card p-3">
+                                <div class="card-title border-bottom pb-2">
+                                    <div class="secondary-subtitle">PLUS</div>
+                                    <div class="tertiary-title">$10/month</div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="mb-2 text">500 notifications</div>
+                                    <div class="mb-2 text">5000 impressions of products</div>
+                                    <div class="mb-2 text">Unlimited BIS requests</div>
+                                    <div class="mb-2 text">Automatic restock reminder</div>
+                                    <div class="mb-2 text">Send notification to single customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-4">
+                            <div class="card p-3">
+                                <div class="card-title border-bottom pb-2">
+                                    <div class="secondary-subtitle">PRO</div>
+                                    <div class="tertiary-title">$20/month</div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <div class="mb-2 text">Unlimited Notify</div>
+                                    <div class="mb-2 text">Unlimited impression of product</div>
+                                    <div class="mb-2 text">Unlimited BIS requests</div>
+                                    <div class="mb-2 text">Automatic restock reminder</div>
+                                    <div class="mb-2 text">Send notification to single customer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span class="text">All charges are billed in USD. Recurring and usage-based charges are billed every 30 days.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4  -->
+        <section id="review" class="container-fluid container-lg sectino-4 section-padding border-top">
+            <div class="row">
+                <div class="col">
+                    <div class="col-12 mb-4">
+                        <h2 class="secondary-title">2 reviews</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                                <div class="mb-2">Overall rating</div>
+                                <div class="d-flex flex-row align-items-center mb-3">
+                                <h3 class="mb-0">3</h3>
+                                <div class="ps-3">
+                                    <span><i class="bi bi-star-fill fs-4"></i></span>
+                                    <span><i class="bi bi-star-fill fs-4"></i></span>
+                                    <span><i class="bi bi-star-fill fs-4"></i></span>
+                                    <span><i class="bi bi-star fs-4"></i></span>
+                                    <span><i class="bi bi-star fs-4"></i></span>
+                                </div>
+                                </div>
+                                <div class="mb-3">
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <span>5</span>
+                                    <span class="px-2"><i class="bi bi-star-fill"></i></span>
+                                    <div class="progress w-100" style="height : 8px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark" style="width: 25%" ></div>
+                                    </div>
+                                    <span class="ps-2">
+                                        <a href="" class="normal-links">1</a>
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <span>4</span>
+                                    <span class="px-2"><i class="bi bi-star-fill"></i></span>
+                                    <div class="progress w-100" style="height : 8px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark" style="width: 0%" ></div>
+                                    </div>
+                                    <span class="ps-2">
+                                        <a href="" class="normal-links">0</a>
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <span>3</span>
+                                    <span class="px-2"><i class="bi bi-star-fill"></i></span>
+                                    <div class="progress w-100" style="height : 8px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark" style="width: 0%" ></div>
+                                    </div>
+                                    <span class="ps-2">
+                                        <a href="" class="normal-links">0</a>
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <span>2</span>
+                                    <span class="px-2"><i class="bi bi-star-fill"></i></span>
+                                    <div class="progress w-100" style="height : 8px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark" style="width: 0%" ></div>
+                                    </div>
+                                    <span class="ps-2">
+                                        <a href="" class="normal-links">0</a>
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-2">
+                                    <span>1</span>
+                                    <span class="px-2"><i class="bi bi-star-fill"></i></span>
+                                    <div class="progress w-100" style="height : 8px" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark" style="width: 25%" ></div>
+                                    </div>
+                                    <span class="ps-2">
+                                        <a href="" class="normal-links">1</a>
+                                    </span>
+                                </div>
+                                </div>
+                                <div>
+                                    <button class="secondary-btn">
+                                        Write a Review
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-9">
+                                <div class="row">
+                                    <div class="col-12 mb-5">
+                                        <div class="row d-flex flex-column flex-md-row flex-column-reverse ">
+                                            <div class="col-12 col-md-4 d-flex justify-content-end">
+                                                <div class="testimonial">
+                                                    <h6 class="fs-12-black">TopDog Nutrition</h6>
+                                                    <p class="fs-12-grey mb-0">New Zealand</p>
+                                                    <span class="fs-12-grey">3 months using the app</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-8 ps-auto ps-md-5 mb-3 mb-md-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+                                                    <div>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                        <span><i class="bi bi-star fs-6"></i></span>
+                                                        <span><i class="bi bi-star fs-6"></i></span>
+                                                        <span><i class="bi bi-star fs-6"></i></span>
+                                                        <span><i class="bi bi-star fs-6"></i></span>
+                                                    </div>
+                                                    <span class="fs-12-grey">November 20, 2023</span>
+                                                </div>
+                                                <div class="secondary-subtitle">This app led to us being disapproved by google ads, and we have been trying to contact them and have not been able to get a single reply for weeks.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-5">
+                                        <div class="row d-flex flex-column flex-md-row flex-column-reverse">
+                                            <div class="col-12 col-md-4 d-flex justify-content-end">
+                                                <div class="testimonial">
+                                                    <h6 class="fs-12-black">Hustle N Holla</h6>
+                                                    <p class="fs-12-grey mb-0">Pakistan</p>
+                                                    <span class="fs-12-grey">About 4 hours using the app</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-8 ps-auto ps-md-5 mb-3 mb-md-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+                                                    <div>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                        <span><i class="bi bi-star-fill fs-6"></i></span>
+                                                    </div>
+                                                    <span class="fs-12-grey">December 20, 2023</span>
+                                                </div>
+                                                <div class="secondary-subtitle">It’s really nice and easy to use app. I’ve also checked other apps and their charges but since this app provides more features and customization I would recommend this app more. About the customer support they always available, support personal customization and team’s support not only resolved my query swiftly but also help and assisted in seamlessly positioning the notification button exactly ...</div>
+                                                <div >
+                                                    <span>
+                                                        <a href="" class="normal-links" style="font-size: 14px;">Show more</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="secondary-btn">
+                                            All Review
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mobile view about this app section  -->
+        <section class="container-fluid container-lg sectino-4 section-padding border-top d-block d-md-none">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="subtitle">About this app</h2>
+                    <div class="mt-3" >
+                        <div class="text mb-1">Launched</div>
+                        <div class="text">June 9, 2023</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="text mb-1">Languages</div>
+                        <div class="text">English, Spanish, French, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, German, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Swedish, Thai, Turkish, and Vietnamese</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="text mb-1">Categories</div>
+                        <div>
+                            <span>
+                                <a href="https://apps.shopify.com/categories/store-design-store-alerts-back-in-stock-alert" class="normal-links">Back in stock alert</a>
+                            </span>,
+                            <span>
+                                <a href="https://apps.shopify.com/categories/selling-products-purchase-options-pre-orders" class="normal-links">Pre-orders</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="text mb-1">Works with</div>
+                        <div class="text">AWS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer  -->
+        <footer id="footer" class="footer">
+            <div class="container-fluid container-lg section-padding">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2 class="secondary-title">Built by ShopeeTech</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="row d-flex flex-column flex-md-row">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <h2 class="subtitle mb-3">About ShopeeTech</h2>
+                                <div class="d-flex flex-column ">
+                                    <a href="https://apps.shopify.com/partners/shopeetech" class="normal-links mb-2">a app</a>
+                                    <span class="secondary-subtitle mb-2">3.0 average rating</span>
+                                    <span class="secondary-subtitle mb-2">6+ months building apps for the Shopify App Store</span>
+                                    <span class="secondary-subtitle mb-2">Surat, Surat, GJ, 395004, IN</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <h2 class="subtitle mb-3">Support</h2>
+                                <div class="d-flex flex-column ">
+                                    <a href="" class="normal-links mb-2">Send a message</a>
+                                    <span class="secondary-subtitle mb-2">bisapp.23@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h2 class="subtitle mb-3">Resources</h2>
+                                <div class="d-flex flex-column ">
+                                    <a href="https://docs.google.com/document/d/1kH9fAAKiSfXGWoxvAJN94Zcb9nFRq7pcOLPI4-s-Yj8/edit#heading=h.t6bdpuaepbtt" target="_blank" class="normal-links mb-2">Privacy policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Modals  -->
+    <div class="modal fade" id="imageCarousel" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header bg-black border-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" onclick="removeClass()">
+                <i class="bi bi-x-lg text-white"></i>
+              </button>
+            </div>
+            <div class="modal-body bg-black">
+                <div class="row container h-100 m-auto">
+                    <div class="col d-flex align-items-center">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item slides " data-bs-interval="false">
+                                <img src="./assets/images/banner-1.jpg" class="d-block w-100" alt="banner-1 image">
+                              </div>
+                              <div class="carousel-item slides" data-bs-interval="false">
+                                <img src="./assets/images/banner-4.jpg" class="d-block w-100" alt="banner-2 image">
+                              </div>
+                              <div class="carousel-item slides" data-bs-interval="false">
+                                <img src="./assets/images/1600_900.jpg" class="d-block w-100" alt="banner-3 image">
+                              </div>
+                              <div class="carousel-item slides" data-bs-interval="false">
+                                <img src="./assets/images/banner-2.jpg" class="d-block w-100" alt="banner-4 image">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <div class="carousel-control-prev-icon text-dark carosuel-custom-btn" aria-hidden="true">
+                                <i class="bi bi-chevron-left"></i>
+                              </div>
+                              <!-- <span class="visually-hidden">Previous</span> -->
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <div class="carousel-control-next-icon text-dark carosuel-custom-btn" aria-hidden="true">
+                                <i class="bi bi-chevron-right"></i>
+                              </div>
+                              <!-- <span class="visually-hidden">Next</span> -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modals End  -->
+
+    <!-- script js  -->
+    <script>
+        function setActive(index) {
+            let carousel = document.getElementsByClassName('slides')
+            carousel[index].classList.add("active")
+        }
+
+        function removeClass() {
+            let carousel = Array.from(document.getElementsByClassName('slides'))
+            carousel.forEach((item) => {
+                if (item.classList.contains("active")) {
+                    item?.classList.remove("active")
+                }
+            })
+        }
+    </script>
+
+    <!-- POPER JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
