@@ -11,6 +11,9 @@
     <!-- title  -->
     <title>Notify Me! Restock Alert</title>
 
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo-32.png">
+
     <!-- style  -->
     <link href="style/style.css" rel="stylesheet">
 
@@ -106,24 +109,37 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-xl-12">
-                            <div class="content-spacing d-flex flex-row ">
-                                <div class="btn-groups w-100">
-                                    <form class="d-flex flex-column justify-content-center w-100 align-items-center"
+                            <div class="col-12 content-spacing d-flex flex-row ">
+                                <div class="col-12 btn-groups w-100">
+                                    <form id="userForm" class="d-flex flex-column justify-content-center w-100 align-items-center"
                                         action="https://bis.shopeetech.com/" method="get">
-                                        <input type="text" class="inputs" name="shop"
-                                            placeholder="example.myshopify.com">
+                                        <input type="text" class="inputs" id="email" name="shop"
+                                            placeholder="example.myshopify.com" onkeydown="removeErr()">
                                         <button class="primary-btn w-100 mt-2" type="submit">
                                             Install
                                         </button>
-                                        <a class="tertiary-btn mt-1"
-                                            href="https://td-offer.myshopify.com/products/dad-hat-black" target="_blank"
-                                            rel="noopener noreferrer">
-                                            View Demo Store
-                                        </a>
-                                        <a class="tertiary-btn mt-1" href="https://apps.shopify.com/notifyme"
-                                            target="_blank" rel="noopener noreferrer">
-                                            View on App Store
-                                        </a>
+                                        <div class="col-12 mt-3 d-flex flex-row flex-wrap align-items-stretch ">
+                                            <div class="col-12 col-lg-6 ">
+                                                <div class="ex-btn">
+                                                    <a class="d-flex flex-row align-items-center"
+                                                        href="https://td-offer.myshopify.com/products/dad-hat-black" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        <div class="ex-btn-ico pe-2">
+                                                            <img src="./assets/icons/shopify.png" alt="shopify icon">
+                                                        </div>
+                                                        <div>Shopify App Store</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-3 mt-lg-0 ps-0 ps-lg-3 d-flex align-items-strech">
+                                                <div class="ex-btn">
+                                                    <a class="" href="https://apps.shopify.com/notifyme"
+                                                        target="_blank" rel="noopener noreferrer">
+                                                        Demo Store
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -186,6 +202,18 @@
             <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(3)" data-bs-toggle="modal"
                 data-bs-target="#imageCarousel">
                 <img src="./assets/images/banner-2.jpg" alt="banner image-4">
+            </span>
+            <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(4)" data-bs-toggle="modal"
+                data-bs-target="#imageCarousel">
+                <img src="./assets/images/collection.jpg" alt="banner image-5">
+            </span>
+            <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(5)" data-bs-toggle="modal"
+                data-bs-target="#imageCarousel">
+                <img src="./assets/images/Preordered.jpg" alt="banner image-6">
+            </span>
+            <span class="col-10 px-0 mx-3 mob-img-bg" onclick="setActive(6)" data-bs-toggle="modal"
+                data-bs-target="#imageCarousel">
+                <img src="./assets/images/Restock.jpg" alt="banner image-7">
             </span>
         </div>
     </div>
@@ -322,8 +350,8 @@
             </div>
             <div class="col-12 mb-4">
                 <div class="row gx-4 d-flex flex-row flex-nowrap overflow-x-auto">
-                    <div class="col-8 col-md-4">
-                        <div class="card p-3">
+                    <div class="col-8 col-md-4 d-flex align-items-stretch">
+                        <div class="card p-3 w-100">
                             <div class="card-title border-bottom pb-2">
                                 <div class="secondary-subtitle">FREE</div>
                                 <div class="tertiary-title">Free</div>
@@ -338,8 +366,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 col-md-4">
-                        <div class="card p-3">
+                    <div class="col-8 col-md-4 d-flex align-items-stretch">
+                        <div class="card p-3 w-100">
                             <div class="card-title border-bottom pb-2">
                                 <div class="secondary-subtitle">PLUS</div>
                                 <div class="tertiary-title">$10/month</div>
@@ -353,8 +381,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 col-md-4">
-                        <div class="card p-3">
+                    <div class="col-8 col-md-4 d-flex align-items-stretch">
+                        <div class="card p-3 w-100">
                             <div class="card-title border-bottom pb-2">
                                 <div class="secondary-subtitle">PRO</div>
                                 <div class="tertiary-title">$20/month</div>
@@ -651,6 +679,18 @@
                                         <img src="./assets/images/banner-2.jpg" class="d-block w-100"
                                             alt="banner-4 image">
                                     </div>
+                                    <div class="carousel-item slides" data-bs-interval="false">
+                                        <img src="./assets/images/collection.jpg" class="d-block w-100"
+                                            alt="banner-5 image">
+                                    </div>
+                                    <div class="carousel-item slides" data-bs-interval="false">
+                                        <img src="./assets/images/Preordered.jpg" class="d-block w-100"
+                                            alt="banner-6 image">
+                                    </div>
+                                    <div class="carousel-item slides" data-bs-interval="false">
+                                        <img src="./assets/images/Restock.jpg" class="d-block w-100"
+                                            alt="banner-7 image">
+                                    </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
                                     data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -679,6 +719,9 @@
 
     <!-- script js  -->
     <script>
+        <!-- // regx  -->
+        const emailPattern = /^[\w-\.]+@(myshopify.com)$/
+
         function setActive(index) {
             let carousel = document.getElementsByClassName('slides')
             carousel[index].classList.add("active")
@@ -692,8 +735,34 @@
                 }
             })
         }
-    </script>
 
+        <!-- Email Input validation START -->
+        
+        let Form = document.getElementById("userForm");
+        
+        Form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            let emailEvent = document.getElementById('email')
+            
+            <!-- // value  -->
+            let email = emailEvent.value
+            
+            if (email.match(emailPattern)) {
+                <!-- // handle submit from here -->
+                console.log('form submit')
+            } else {
+                emailEvent.classList.add('errors')
+            }
+        })
+        
+        function removeErr() {
+            let emailEvent = document.getElementById('email')
+            emailEvent.classList.remove('errors')
+        }
+        <!-- Email Input validation START -->
+    </script>
+    
     <!-- POPER JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

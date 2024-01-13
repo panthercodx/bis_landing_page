@@ -11,6 +11,11 @@
     --text-color : #78726D;
 }
 
+
+.BG-secondary {
+    background-color: var(--bg-secondary);
+}
+
 /* -------------------------- */
 /*    TEXT DECLARATION START  */
 /* -------------------------- */
@@ -124,6 +129,30 @@ button {
     font-weight: 500;
 }
 
+.ex-btn {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    /* border-radius: 30px; */
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ex-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.ex-btn .ex-btn-ico img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
 
 
 /* -------------------------- */
@@ -181,6 +210,9 @@ li {
     border: 1px solid var(--greay);
 }
 
+.inputs.errors {
+    border: 1px solid #ed4337;
+}
 
 /* -------------------------- */
 /*           NAVBAR           */
@@ -428,6 +460,79 @@ li {
     align-items: center;
 } */
 
+/* --------------------  */
+/* Plan Page style start */
+/* --------------------  */
+
+.plan-title {
+    position: relative;
+    top: 50%;
+    left: var(100% - 50%);
+}
+
+.custom-card {
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px #92929280;
+    padding: 30px;
+    background-color: var(--white);
+    transition: all .2s ease-in-out;
+}
+
+.plan-list {
+    min-height: 300px;
+}
+
+sup {
+    font-size: 18px !important;
+    color: var(--greay);
+}
+
+.plan-btn {
+    /* background-color: var(--black); */
+    color: var(--black);
+    border: 1px solid var(--greay);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 24px;
+}
+
+.plan-btn.active,
+ .plan-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.plan-label {
+    color: var(--white);
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    background-color: #898989;
+}
+
+/* .plan-label.free {
+    background-color: red;
+}
+.plan-label.paid {
+    background-color: green;
+} */
+
+/* --------------------  */
+/* Plan Page style END   */
+/* --------------------  */
+
+/* ------------------ */
+/* card hover style   */
+/* ------------------ */
+
+.custom-card:hover {
+    transform: scale(1.03);
+}
+
+
 @media only screen and (max-width: 992px) {
     .testimonial {
         width: 100%;
@@ -448,5 +553,9 @@ li {
         position: absolute;
         top: 4px;
         left: 6px;
+    }
+
+    .plan-list {
+        min-height: auto;
     }
 }
