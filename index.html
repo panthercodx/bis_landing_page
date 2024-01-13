@@ -23,6 +23,7 @@
 
     <!-- BOOTSTRAP ICONS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB4B9PEHV5"></script>
     <script>
@@ -127,7 +128,10 @@
                                                         <div class="ex-btn-ico pe-2">
                                                             <img src="./assets/icons/shopify.png" alt="shopify icon">
                                                         </div>
-                                                        <div>Shopify App Store</div>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="store-btn-label">Find it on the</span>
+                                                            <span class="store-btn-main-label">Shopify App Store</span>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </div>
@@ -719,7 +723,7 @@
 
     <!-- script js  -->
     <script>
-        <!-- // regx  -->
+        // regx 
         const emailPattern = /^[\w-\.]+@(myshopify.com)$/
 
         function setActive(index) {
@@ -736,7 +740,7 @@
             })
         }
 
-        <!-- Email Input validation START -->
+        // Email Input validation START
         
         let Form = document.getElementById("userForm");
         
@@ -745,11 +749,11 @@
             
             let emailEvent = document.getElementById('email')
             
-            <!-- // value  -->
+            // value 
             let email = emailEvent.value
             
             if (email.match(emailPattern)) {
-                <!-- // handle submit from here -->
+                // handle submit from here
                 console.log('form submit')
             } else {
                 emailEvent.classList.add('errors')
@@ -760,7 +764,7 @@
             let emailEvent = document.getElementById('email')
             emailEvent.classList.remove('errors')
         }
-        <!-- Email Input validation START -->
+        // Email Input validation START
     </script>
     
     <!-- POPER JS  -->

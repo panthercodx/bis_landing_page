@@ -134,8 +134,8 @@ button {
     color: var(--white);
     font-size: 15px;
     font-weight: 500;
-    /* border-radius: 30px; */
-    padding: 10px 25px;
+    border-radius: 8px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +151,20 @@ button {
     height: 40px;
     width: 40px;
     object-fit: contain;
+}
+
+button:disabled {
+    background-color: var(--greay);
+    cursor: not-allowed;
+}
+
+.store-btn-label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.store-btn-main-label {
+    font-size: 15px;
+
 }
 
 
