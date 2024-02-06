@@ -98,7 +98,7 @@ function render(data) {
 }
 
 async function getPlans() {
-    const res = await fetch('https://bis.shopeetech.com/api/get-all-plans')
+    const res = await fetch('https://bis.syncresource.app/api/get-all-plans')
     if (res.status === 200) {
         const data = await res.json()
         render(data?.data)
